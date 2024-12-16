@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a8b, #fad0c4); /* Soft pastel pink */
+            color: #2c3e50; /* Deep gray-blue for better readability */
+            padding: 10px;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 15px; /* Rounded corners for a softer feel */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #e74c3c; /* Bold red for excitement */
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e; /* Darker gray-blue for a calmer text color */
+        }
+        .quote {
+            font-size: 1.1em;
+            margin: 15px 0;
+            font-style: italic;
+            color: #f39c12; /* Warm yellow-orange for the quotes */
+        }
+        .button {
+            background: #f39c12;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #e67e22; /* Darker orange when hovered */
+        }
+        #about-you {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #2c3e50;
+            background: #ecf0f1; /* Light gray background for the section */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #about-you p {
+            text-align: left;
+            margin: 10px 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            p, .quote, .button, #about-you p {
+                font-size: 1em;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday! 🎉</h1>
+        <p>Wishing you a day filled with love, joy, and all your favorite things. May your year ahead be as wonderful as you are. 🥳</p>
+        <div class="quote">"Count your life by smiles, not tears. Count your age by friends, not years." ✨</div>
+        <div class="quote">"On this day, a queen was born. 👑 Happy birthday to the most special person in my life."</div>
+
+        <!-- Image Section -->
+        <img src="images\front_image.jpg" alt="Happy Birthday Image" width="1080" height="1919" style="max-width: 100%; height: auto; margin-top: 20px;">
+
+        <!-- Video Section -->
+        <video width="1280" height="720" controls style="margin-top: 20px; max-width: 100%; height: auto;">
+            <source src="images\front_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <button class="button" onclick="showAbout()">About You 💖</button>
+        <div id="about-you">
+            <p><strong>You are clear and honest about what you want, and you don't like it when your needs are ignored. If something upsets you, you expect the other person to address it rather than leaving it unresolved, because you value resolution before moving on. You're not fond of overthinking and prefer to act based on your instincts rather than spending too much time analyzing. You value your freedom and dislike being controlled, wanting the ability to interact with others as you choose. You're self-aware, accepting your flaws, and expect others to do the same without judgment or trying to change you. While you act on feelings, you also think carefully before making decisions or asking for something.
+
+                As a girl, you bring a unique strength and warmth to your relationships. You're nurturing yet independent, and you know how to balance caring for others with taking care of yourself. Your intuition often guides you, helping you read situations and people with a deeper understanding. You enjoy expressing yourself, whether it's through your creativity, your thoughts, or your actions, and you believe in staying true to who you are. You're also resilient, able to navigate challenges while remaining true to your values. Your sense of humor and light-heartedness often bring joy to those around you.</strong></p>
+            <p>Happy Birthday! 🎂🎉</p>
+        </div>
+        <a href="test.html" class="button">Surprise Inside! 🎁</a>
+    </div>
+    <script>
+        function showAbout() {
+            var aboutSection = document.getElementById('about-you');
+            if (aboutSection.style.display === 'block') {
+                aboutSection.style.display = 'none';
+            } else {
+                aboutSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
